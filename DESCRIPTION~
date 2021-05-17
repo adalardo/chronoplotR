@@ -1,0 +1,15 @@
+Package: chronoplotR
+Type: Package
+Title: Actogram Plot
+Version: 1.0
+Date: 2021-05-17
+Authors@R: c(
+	   person("Beatriz", "Foganholi", , "beatriz.foganholi.fernandes@usp.br", role = c("aut", "cre")),
+	   person("Alexandre", "Oliveira", , "adalardo@usp.br", role = c("aut"))
+	   )
+Maintainer: Beatriz Foganholi<beatriz.foganholi.fernandes@usp.br>
+Description: Retorna graficamente dados biológicos ritmicos no formato típico de actograma, comumente utilizado na área de estudos cronobiológicos.
+O actograma permite combinar os dados de um mesmo indivíduo a diferentes regimes ambientais de fotoperíodo (obrigatório) e de temperatura(opcional). 
+Depends: lubridate, hms, ggplot2, gridExtra
+
+License: GPL-2
