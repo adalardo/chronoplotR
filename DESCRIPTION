@@ -11,4 +11,4 @@ Maintainer: Beatriz Foganholi<beatriz.foganholi.fernandes@usp.br>
 Description: Retorna graficamente dados biológicos ritmicos no formato típico de actograma, comumente utilizado na área de estudos cronobiológicos. O actograma permite combinar os dados de um mesmo indivíduo a diferentes regimes ambientais de fotoperíodo (obrigatório) e de temperatura(opcional). 
 Depends: lubridate, hms, ggplot2, gridExtra
 License: GPL-2
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

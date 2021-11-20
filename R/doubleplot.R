@@ -1,12 +1,13 @@
 #' Actogram Plot
-#' An plot representation of animal activities rhythms
+#' Representation of animal activities rhythms plot
+#' @name doubleplot
 #' @param timestamp a vector of data and time in time stamp format ("yyyy-mm-hh:mm:ss").
 #' @param rythm a numeric vector related to activities variable for each timestamp.
-#' @param n_lines
-#' @param dark_beg
-#' @param dark_end
-#' @param cold_beg
-#' @param col_end
+#' @param n_lines number of lines
+#' @param dark_beg dark begins
+#' @param dark_end dark ends
+#' @param cold_beg cold begins
+#' @param cold_end cold ends
 #' @section Details:  O argumento n_lines pode ser utilizado para selecionar um conjunto dos dados desejados, tendo-se em mente que como trata-se de dados temporais em sequência, n_lines se refere à quantidade de observações contidas no intervalo 1:n_lines, ou seja, sempre a partir da primeira observação fornecida.
 #' @return an doble actogram plot and ritm table
 #' @section References:   MARQUES, M. D.; GOLOMBEK, D.; MORENO, C. Adaptação Temporal. In: MARQUES, N. &  MENNA-BARRETO, L. Cronobiologia: princípios e aplicações. São Paulo: Editora Universidade de São Paulo, 1999. p.45-62.
@@ -34,7 +35,8 @@
 #' doubleplot(timestamp=timestamp,rythm=rythm,n_lines=500,dark_beg=dark_beg,dark_end=dark_end,cold_beg=cold_beg,cold_end=cold_end, bar_width=600, graph_font="AvantGarde", hot_color="lightcoral", x_title_size = 5.5, y_lables_size=2.8, first_day=15, plot_legend=F)
 #' }
 #' 
-#' 
+#'
+#' @encoding UTF-8
 doubleplot <- function(timestamp, rythm, n_lines, dark_beg, dark_end, 
                       cold_beg=rep("00:00:00",n_lines), cold_end=rep("00:00:00",n_lines),
                       bar_width=300, 
